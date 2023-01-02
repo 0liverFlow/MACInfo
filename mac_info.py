@@ -62,7 +62,7 @@ def display_dict_info(dict_values):
         print(f"*  {key}: {value}")
 
 def check_if_virtual_machine(oui):
-    with open('/Users/cyberwarr10r/Documents/Programming/IPToolkit/Hypervisor_ouis.csv') as hypervisors_csv_file:
+    with open('./Hypervisor_ouis.csv') as hypervisors_csv_file:
         csv_reader = csv.DictReader(hypervisors_csv_file, delimiter=';')
         for line in csv_reader:
             if line['OUI'] == oui:
